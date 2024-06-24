@@ -1,13 +1,11 @@
 //問１
 let numbers = [2, 5, 12, 13, 15, 18, 22];
-function isEven() {
-    for(let num = 0; num < numbers.length; num++) {
+function isEven(num) {
         if(num % 2 ===0) {
-            console.log(numbers[num] + "は偶数です")
-        }
+            console.log(num + "は偶数です")
     }
 }
-isEven();
+numbers.forEach(isEven);
 
 //問２
 class Car {
